@@ -1,1 +1,81 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background: linear-gradient(120deg, #FF00C7 0%, #51003F 100%), linear-gradient(120deg, #0030AD 0%, #00071A 100%), linear-gradient(180deg, #000346 0%, #FF0000 100%), linear-gradient(60deg, #0029FF 0%, #AA0014 100%), radial-gradient(100% 165% at 100% 100%, #FF00A8 0%, #00FF47 100%), radial-gradient(100% 150% at 0% 0%, #FFF500 0%, #51D500 100%);
+background-blend-mode: overlay, color-dodge, overlay, overlay, difference, normal;
+animation: hue-shift 2s infinite alternate;
+}
+
+@keyframes move-up {
+  from{
+      transform: translateY(0);
+  }
+  to{
+      transform: translateY(2rem);
+  }
+}
+@keyframes move-down {
+  from{
+      transform: translateY(0);
+  }
+  to{
+      transform: translateY(-2rem);
+  }
+}
+@keyframes hue-shift {
+  from{
+      filter: hue-rotate(0);
+  }
+  to{
+      filter: hue-rotate(50deg);
+  }
+}
+
+@media screen and (max-width: 768px){
+  .nav{
+      align-items: center;
+  }
+  .content{
+      grid-template-columns: 1fr;
+  }
+  .content-details{
+      order: 1;
+      max-width: 100%;
+  }
+  .title{
+      font-size: 3.5rem;
+
+      }}
+
+.hoverwell:hover {
+    background-color: #485563;
+    cursor: pointer;
+  }
+  
+  .container {
+    padding-top: 10px;
+  }
+  
+  .pointable {
+    cursor: pointer;
+  }
+  
+  button {
+    color: #555;
+  }
+  
+  [hidden] {
+    display: none !important;
+  }
+  
+  .toast-success {
+    background-color: #51a351;
+  }
+  .toast-error {
+    background-color: #bd362f;
+  }
+  .toast-info {
+    background-color: #2f96b4;
+  }
+  .toast-warning {
+    background-color: #f89406;
+  }
